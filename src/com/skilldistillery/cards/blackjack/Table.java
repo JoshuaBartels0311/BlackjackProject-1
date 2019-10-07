@@ -3,7 +3,6 @@ package com.skilldistillery.cards.blackjack;
 import java.util.Scanner;
 
 public class Table {
-
 	private BlackjackPlayer bjPlayer;
 	private Dealer dealer;
 	private Scanner kb;
@@ -21,8 +20,8 @@ public class Table {
 
 	private void welcome() {
 		System.out.println("Welcome to the Blackjack Table!");
-		System.out.println("Press 1 + Enter to Play");
-		System.out.println("Press 2 + Enter to Exit");
+		System.out.println("Enter 1 to Play");
+		System.out.println("Enter 2 to Exit");
 		System.out.print(">>");
 		int selection = kb.nextInt();
 		switch (selection) {
@@ -65,8 +64,8 @@ public class Table {
 
 	private void continueGame() {
 		System.out.println("\nWould you like to play another hand?");
-		System.out.println("\nPress 1 + enter to Play");
-		System.out.println("Press 2 + enter to Exit");
+		System.out.println("\nEnter 1 to Play");
+		System.out.println("Enter 2 to Exit");
 		System.out.print(">>");
 		int selection = kb.nextInt();
 		switch (selection) {
@@ -108,8 +107,8 @@ public class Table {
 	}
 
 	private void hitOrStay() {
-		System.out.println("\nTo Hit enter 1");
-		System.out.println("To Stay enter 2");
+		System.out.println("\nTo HIT enter 1");
+		System.out.println("To STAY enter 2");
 		int selection = kb.nextInt();
 		switch (selection) {
 		case 1:
